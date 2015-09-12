@@ -272,7 +272,9 @@ Otherwise, we eventually return to our predecessor.
 
 # 4 The Template
 
-To make the challenge more manageable I have created a template.  
+To make the challenge more manageable I have created a template in the repository.
+I have also included an example of Dijkstra's algorithm to show you how I solved
+a similar problem.
 
 # 5 Scoring criteria
 
