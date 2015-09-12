@@ -13,13 +13,13 @@ equal dash across all western states if time permits.
 
 In order to appeal to the liberal vote, she has decided to do the trip by bus
 rather than flying, and not to visit any state more than once.  So we need to help
-her find a route starting in Washington and visiting each state only once.  I have
-left the remote states of Alaska and Hawaii) out of the problem.
+her find a route starting in Washington DC and visiting each state only once.  She
+does not need to return to Washington in the found journey.
 
 In computer science terms, we can represent the USA as a set of nodes representing
 the states.  If two states share a border, then this is represented as an undirected
 vertex between the nodes. A path that visits every node in the graph only once is
-called a Hamiltonian cycle.  The problem of finding the set of all Hamiltonian cycles
+called a Hamiltonian graph.  The problem of finding the set of all Hamiltonian graphs
 in an undirected graph is NP-complete.  The first person to solve this problem
 mathematically was Euler for the bridges of Konigsberg.
 
@@ -27,7 +27,7 @@ Here is an example of graph with the Hamiltonian cycle drawn on it:
 
 ![Hamiltonian Graph](https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Hamiltonian_path.svg/220px-Hamiltonian_path.svg)
 
-I will provide you with a represention of the directed graph of US mainland states.
+I will provide you with a representation of the directed graph of US mainland states.
 I also provide a method to remove the western states.  This is the map I used to
 generate the network:
 
@@ -48,8 +48,8 @@ why many startups initially use Ruby as their initial language.  Twitter and Gro
 are two famous examples.  Ruby's big disadvantage is execution speed.  As it is
 interpreted, it is much slower than C or C++.  Once scale becomes an issue, people
 often end up re-writing their applications in other languages.  Speed is also the
-reason why we are only tackling half the USA.  I found that trying to determin
- a Hamiltonian path for the entire mainland USA simply took too long.
+reason why we are only tackling half the USA.  I found that trying to determine
+a Hamiltonian path for the entire mainland USA simply took too long.
 
 ## 2.1 Ruby is truly object oriented and strongly typed
 
@@ -161,12 +161,10 @@ shows a simple hash that is used to map a person to their age (all names and
 ages are fictitious):
 
 ```
-irb(main):002:0> **ages = { "Peter" => 20, "Jane" => 5, "James" => 16 }**
+irb(main):002:0> ages = { "Peter" => 20, "Jane" => 5, "James" => 16 }
 => {"Peter"=>20, "Jane"=>5, "James"=>16}
-
-irb(main):003:0> **ages["Peter"]**
+irb(main):003:0> ages["Peter"]
 => 20
-
 irb(main):004:0> ages["Mary"]
 => nil
 ```
@@ -198,22 +196,16 @@ Java and C:
     D:\RubyDevKit>irb
     irb(main):001:0> a = [0, 1, 5, 10]
     => [0, 1, 5, 10]
-
-    irb(main):002:0> a[0]**
+    irb(main):002:0> a[0]
     => 0
-
     irb(main):003:0> a[3]
     => 10
-
     irb(main):004:0> a[6]
     => nil
-
     irb(main):005:0> a.push( "Peter" )
     => [0, 1, 5, 10, "Peter"]
-
     irb(main):006:0> a.pop
     => "Peter"
-
     irb(main):007:0>
 
 The main difference to Java and C is that the array elements can be of any type.
