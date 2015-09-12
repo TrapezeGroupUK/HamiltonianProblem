@@ -31,7 +31,7 @@ I will provide you with a represention of the directed graph of US mainland stat
 I also provide a method to remove the western states.  This is the map I used to
 generate the network:
 
-![States of the USA](https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Map_of_USA_with_state_names_2.svg/712px-Map_of_USA_with_state_names_2.svg)
+![States of the USA](https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Map_of_USA_with_state_names_2.svg/712px-Map_of_USA_with_state_names_2.svg.png)
 
 # 2 A very quick introduction to Ruby
 
