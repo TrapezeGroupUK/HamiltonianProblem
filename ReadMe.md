@@ -156,7 +156,7 @@ Ruby has a super-class called collections to store multiple objects.  The two mo
 important examples of collections in the language are Arrays and Hashes.
 Ruby programmers do with these two constructs what programmers in other languages
 often end up doing by creating private classes.  For our challenge today, I will
-use a Hash to hold the graph of how the counties are connected.  The following
+use a Hash to hold the graph of how the states are connected.  The following
 shows a simple hash that is used to map a person to their age (all names and
 ages are fictitious):
 
@@ -251,7 +251,7 @@ There are a couple of other methods that you will probably find useful:
 
 To output the solution, assuming it is stored in an array, you will need the following statement:
 ```ruby
-puts "complete journey = #{ **@journey****. **join** ( **" -> "** )** }"
+puts "complete journey = #{ @journey.join ( " -> " ) }"
 ```
 
 # 3 Suggested Algorithm
@@ -259,7 +259,7 @@ puts "complete journey = #{ **@journey****. **join** ( **" -> "** )** }"
 We need three variables to capture where we have got to:
 
 - *Unvisited* the list of nodes yet to be visited
-- *Journey* an array holding the sequence in which nodes
+- *Journey* an array holding the sequence in which nodes are visited
 - *Current* the current node from which we are searching for the solution
 
 The algorithm needs to examine for the current node each of the neighbours and
