@@ -223,7 +223,7 @@ a contrived example of using a loop to add all the ages in the Hash.
 def combined\_age
   ages = { "Peter" =>20, "David" => 5, "James" => 16 }
   total_age = 0
-  ages.each do |age|
+  ages.each_value do |age|
     total_age += age
   end
 end
@@ -233,6 +233,11 @@ one method call, but that was not the point.  One gotcha to be wary of is the
 block between the _do_ and _end_ has its own lexical scope.  So if you assign
 to a not yet defined variable in the block, it will no longer exist once the
 block completes.
+
+In the above, I used the hash iterator `each_value`.  There is also a corresponding
+`each_key`.  If you need to retrieve both at the same time there is a `each_pair`.
+This returns the key and value as parameters.  The Dijkstra example shows how it
+can be used.  For arrays an iterator `each` exists.  
 
 ## 2.9 Final Tricks: Other methods on Hash, Set and Array that may be useful
 
