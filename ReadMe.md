@@ -44,8 +44,9 @@ the algorithm.
 Ruby has become famous as the language in which the Web framework Ruby-on-Rails
 is developed.  The advantage of Ruby and Rails is that programmers are much more
 productive than in more conventional languages and frameworks.  This is the reason
-why many startups initially use Ruby as their initial language.  Twitter and Groupon
-are two famous examples.  Ruby's big disadvantage is execution speed.  As it is
+why many startups initially use Ruby as their initial language.  Github, Twitter and Groupon
+are three famous examples.  This text you are reading has been rendered using Ruby.
+Ruby's big disadvantage is execution speed.  As it is
 interpreted, it is much slower than C or C++.  Once scale becomes an issue, people
 often end up re-writing their applications in other languages.  Speed is also the
 reason why we are only tackling half the USA.  I found that trying to determine
@@ -272,6 +273,9 @@ Otherwise, we eventually return to our predecessor.
 To make the challenge more manageable I have created a template in the repository.
 I have also included an example of Dijkstra's algorithm to show you how I solved
 a similar problem.
+
+You can either pull the repository if you are familiar with Git.  Otherwise,
+get Github to provide you with a Zip file.
 
 # 5 Scoring criteria
 
