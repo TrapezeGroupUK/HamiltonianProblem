@@ -270,7 +270,12 @@ a similar problem.
 
 # 5 Scoring criteria
 
-Your task is clearly to write the algorithm.  I will give points for the correct
-algorithm.  However, I will also be giving points for sensible variable names,
-and for good commenting.  I will give additional points, if you have built some
-degree of testing into your solution.
+Your task is to write the algorithm.  Please submit your solution by email.  I
+will check the submitted solution.  I will award points on the following:
+
+- Time of submission
+- If I spot a mistake (even if it finds the correct solution), I may deduct points.
+- I will also be giving points for sensible variable names and for good commenting.
+- I will give additional points, if you have built some degree of testing into your solution.
+
+There will be a first and second prize for completing the competition.
